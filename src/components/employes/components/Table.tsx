@@ -2,6 +2,7 @@
 /** @jsx jsx */
 import { CSSObject, jsx } from '@emotion/react';
 import React from 'react';
+import TableItem from './TableItem';
 
 interface TableProps {
   data: Employee[];
@@ -18,16 +19,8 @@ const Table = ({ data, onDeleteEmployee }: TableProps) => {
           <th>Surname</th>
           <th></th>
         </tr>
-        {data.map(({ id, firstname, surname }) => (
-          <tr key={id}>
-            <td>{firstname}</td>
-            <td>{surname}</td>
-            <td>
-              <button css={styles.btnDelete} title="Delete item" onClick={() => onDeleteEmployee(id)}>
-                delete
-              </button>
-            </td>
-          </tr>
+        {data.map(item => (
+          <TableItem item={item} onClickDelete={() => onDeleteEmployee(item.id)} />
         ))}
       </table>
     );
@@ -46,15 +39,6 @@ const styles = {
       padding: '15px',
     },
   } as CSSObject,
-  btnDelete: {
-    cursor: 'pointer',
-    border: '1px solid red',
-    background: 'transparent',
-
-    '&:hover': {
-      background: 'red',
-    },
-  },
 };
 
 export default Table;
