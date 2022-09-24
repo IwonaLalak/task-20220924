@@ -36,11 +36,9 @@ const styles = {
     '&': css`
       @keyframes animation {
         from {
-          background-color: red;
           transform: translateX(0px);
         }
         to {
-          background-color: yellow;
           transform: translateX(calc(100vw - 300px - 100px));
         }
       }
