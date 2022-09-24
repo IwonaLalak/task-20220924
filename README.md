@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+# egarden
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application game where you can have a virtual garden.
 
-## Available Scripts
+### Tech stack
 
-In the project directory, you can run:
+- core: ReactJS (CRA)
+- code supporters: Typescript, Prettier, tests
+- styles: emotion, Bootstrap grid
+- storage: Redux, Redux-Persist, Thunk
+- helpers: immer
 
-### `npm start`
+### Agenda
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+##### 1st stage - prepare to work, create basic models, create basic pick-plant-grow-harvest functionality
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+[ ] 1.0 - configure project & plan work
+[ ] 1.1 - create basic plant model with states: seeds (in storage, ready to plant), seedling (growing), overgrown (ready to collect), harvest (in storage, ready to sell or change to seeds) & create first plant (basil)  
+[ ] 1.2 - create storage & show all seeds and plants there
+[ ] 1.3 - create mechanism to pick plant/seeds
+[ ] 1.4 - create basic garden-matrix
+[ ] 1.5 - create possibility to "plant" seeds on garden-matrix
+[ ] 1.6 - create "grow" time mechanism
+[ ] 1.7 - create harvest mechanism
+[ ] 1.8 - create "harvest to seeds" transform mechanism
+[ ] 1.9 - create second type of plant (lettuce)
 
-### `npm test`
+##### 2nd stage - define user & profile, prepare levels functionality
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+to be continued
 
-### `npm run build`
+##### 3rd stage - prepare cash flow mechanism, define seeds-store functionality
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+to be continued
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##### 4th stage - random collect events (player needs to deliver specific harvests to accomplish task and earn money)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+to be continued
 
-### `npm run eject`
+##### 5th stage - expand garden functionalities which make plants grow faster(watering can, rain, fertilizer)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+to be continued
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##### 6th stage - random events which make game harder (insects, moles, weeds)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+to be continued
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+##### 7th stage - market functionality (trade between players)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+to be continued
